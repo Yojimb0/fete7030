@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "autopref": "mkdir build && postcss --use autoprefixer *.css -d build/"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,12 @@
   },
   "homepage": "https://github.com/Yojimb0/fete7030#readme",
   "dependencies": {
+    "autoprefixer": "^6.3.1",
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
     "express-authentication": "^0.3.2",
     "express-session": "^1.13.0",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "postcss-cli": "^2.5.0"
   }
 }
