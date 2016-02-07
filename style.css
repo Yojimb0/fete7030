@@ -59,16 +59,16 @@ body.no_auth{display:flex;position:relative;background: #A8DBA8;color:#A8DBA8}
 @keyframes splash2 { 0% { right: 0;opacity: 1; }         100% { right: -150%;opacity:0; }    }
 
 @media (max-width: 800px) {
-	.section_decompte .w_bg{background:#0B486B;}
-	.section_map .w_bg{background:#0B486B;}
+	.section_decompte .w_bg{background:#3B8686;}
+	.section_map .w_bg{background:#A8DBA8;}
 	.section_decompte p,
 	.section_decompte .compte,
 	.section_datelieu p,
 	.section_map p{font-size: 30px;line-height: 45px;}
 }
 @media (max-width: 600px) {
-	.section_decompte .w_bg{background:#0B486B;}
-	.section_map .w_bg{background:#0B486B;}
+	.section_decompte .w_bg{background:#3B8686;}
+	.section_map .w_bg{background:#A8DBA8;}
 	.section_decompte p,
 	.section_decompte .compte,
 	.section_datelieu p,
