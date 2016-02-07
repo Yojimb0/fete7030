@@ -1,0 +1,47 @@
+html
+	head
+		meta(name="robots", content="noindex, nofollow")
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Lato:900|Indie+Flower")
+		link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+		style
+			include style.css
+
+	body(class=(auth)?'auth':'no_auth')
+		if auth === true
+			section.section_splash
+			section.section_decompte
+				.w_bg
+				.text
+					p Le compte à rebours de la fête familiale annuelle est lancé ..
+					p: .compte J - #[span] !
+				div.scroll
+						
+			section.section_datelieu
+				.text
+					p.l1 Rejoignez nous le samedi 20 Août 2016 pour célebrer nos 70 / 30, à la Glissette, et comme chaque année, perpétuons ensemble la tradition de ces plaisantes retrouvailles !
+					.img.l1: img(src="eux.png")
+					p.l2 Vous trouverez ci-après un petit formulaire à remplir pour nous aider dans la planification
+					.img.l2: img(src="noustous.png")
+
+			section.section_map
+				.w_bg
+				.text
+					p Nous vous engageons à rechercher très rapidement votre hébergement dans notre belle et très prisée région de Provence.
+
+			section.section_googleform
+				iframe(src="https://docs.google.com/forms/d/1bQUYskByRhYjcotUZrsfCFfKSBLuoC0TWNFFuCtgRFc/viewform?embedded=true", frameborder="0", marginheight="0", marginwidth="0").
+					Chargement ...
+		else
+			section.section_form
+				p Veuillez saisir ici le mot de passe présent dans l'email contenant le lien de cette page. Validez en appuyant sur la touche #[em Entrée]
+				.form
+					form(method="post", action="/login")
+						input(type="text", name="password")
+				p: small Cette étape a pour but d'éviter que les informations partagées ne soient accessibles par n'importe qui sur Internet.
+
+		script.
+			document.querySelector('.compte span').innerHTML = Math.floor(((new Date(2016, 8, 20)) - (new Date(2016, 0, 0))) / (1000*60*60*24));
+

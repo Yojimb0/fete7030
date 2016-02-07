@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -16,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Yojimb0/fete7030/issues"
   },
-  "homepage": "https://github.com/Yojimb0/fete7030#readme"
+  "homepage": "https://github.com/Yojimb0/fete7030#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "express-authentication": "^0.3.2",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0"
+  }
 }
