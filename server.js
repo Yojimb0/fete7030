@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/login', function(req, res) {
-	if(req.body.password === process.env.SECRET) req.session.auth = true;
+	if(req.body.password.toLowerCase() === process.env.SECRET) req.session.auth = true;
 	res.redirect('/');
 });
 
