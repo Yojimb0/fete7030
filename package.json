@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "autopref": "mkdir build && postcss --use autoprefixer *.css -d build/"
+    "start": "npm run build && node server.js",
+    "autopref": "mkdir build && postcss --use autoprefixer *.css -d build/",
+    "build": "npm run autopref"
   },
   "repository": {
     "type": "git",
