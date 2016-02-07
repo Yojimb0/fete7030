@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build && node server.js",
     "autopref": "mkdir build && postcss --use autoprefixer *.css -d build/",
-    "build": "npm run autopref"
+    "build": "rm -rf build && npm run autopref"
   },
   "repository": {
     "type": "git",
