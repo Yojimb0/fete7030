@@ -21,7 +21,7 @@ html
 						
 			section.section_datelieu
 				.text
-					p.l1 Rejoignez nous le samedi 20 Août 2016 pour célebrer nos 70 / 30, à la Glissette, et comme chaque année, perpétuons ensemble la tradition de ces plaisantes retrouvailles !
+					p.l1 Rejoignez nous le samedi 20 Août 2016 pour célébrer nos 70 / 30, à la Glissette, et comme chaque année, perpétuons ensemble la tradition de ces plaisantes retrouvailles !
 					.img.l1: img(src="eux.jpg")
 					p.l2 Vous trouverez ci-après un petit formulaire à remplir pour nous aider dans la planification
 					.img.l2: img(src="noustous.jpg")
@@ -36,10 +36,11 @@ html
 					Chargement ...
 		else
 			section.section_form
-				p Veuillez saisir ici le mot de passe présent dans l'email contenant le lien de cette page. Validez en appuyant sur la touche #[em Entrée]
+				p Veuillez saisir ici le mot de passe présent dans l'email contenant le lien de cette page.
 				.form
 					form(method="post", action="/login")
 						input(type="text", name="password")
+						button(type="submit") Valider
 				p: small Cette étape a pour but d'éviter que les informations partagées ne soient accessibles par n'importe qui sur Internet.
 
 		script.
